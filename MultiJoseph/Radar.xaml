@@ -1,0 +1,56 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiJoseph.Radar"
+             Title="Radar Scanner"
+             BackgroundColor="#1a1a2e">
+
+    <Grid 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        Padding="20">
+        <Frame 
+            WidthRequest="250" 
+            HeightRequest="250" 
+               CornerRadius="125" 
+               BackgroundColor="Transparent" 
+               BorderColor="Lime" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
+
+        <Frame 
+            WidthRequest="150" 
+               HeightRequest="150" 
+               CornerRadius="75" 
+               BackgroundColor="#16213e" 
+               BorderColor="Green" 
+               Opacity="0.5"
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
+
+        <BoxView
+            Color="Red" 
+                 WidthRequest="15" 
+                 HeightRequest="15" 
+                 TranslationX="40" 
+                 TranslationY="-30"
+                 HorizontalOptions="Center" 
+                 VerticalOptions="Center"/>
+
+        <VerticalStackLayout 
+            Spacing="20" 
+            VerticalOptions="End" 
+            Margin="0,300,0,0">
+            <Label 
+                Text="TARGET DETECTED: SECTOR 7" 
+                TextColor="Lime" 
+                HorizontalOptions="Center" 
+                FontAttributes="Bold"/>
+
+            <Button 
+                Text="FINAL DOCKING" 
+                Clicked="OnNextClicked" 
+                BackgroundColor="DarkRed" 
+                TextColor="White"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

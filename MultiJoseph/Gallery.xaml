@@ -1,0 +1,30 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiJoseph.Gallery"
+             BackgroundColor="#1a1a2e">
+    <Grid RowDefinitions="Auto, *, Auto" 
+          ColumnDefinitions="*, *" 
+          Padding="20" 
+          BackgroundColor="#1a1a2e">
+        <Label 
+            Grid.ColumnSpan="2" 
+            Text="PICK A SHIP" 
+            TextColor="White" 
+            HorizontalOptions="Center"/>
+        <Image 
+            Grid.Row="1" 
+            Grid.Column="0" 
+            Source="rocket.jpg" 
+            HeightRequest="150"/>
+        <Image 
+            Grid.Row="1" 
+            Grid.Column="1" 
+            Source="ship.jpg" 
+            HeightRequest="150"/>
+        <Button 
+            Grid.Row="2" 
+            Grid.ColumnSpan="2" 
+            Text="CONFIRM" 
+            Clicked="OnNextClicked"/>
+    </Grid>
+</ContentPage>

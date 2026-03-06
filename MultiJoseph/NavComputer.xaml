@@ -1,0 +1,73 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiJoseph.NavComputer"
+             Title="Navigation Computer"
+             BackgroundColor="#1a1a2e">
+
+    <VerticalStackLayout 
+        Spacing="15" 
+        Padding="30" 
+        VerticalOptions="Center">
+
+        <Label 
+            Text="FLIGHT DATA" 
+            TextColor="Gold" 
+            FontSize="22" 
+            HorizontalOptions="Center" 
+            Margin="0,0,0,20"/>
+
+        <Frame 
+            BackgroundColor="#16213e" 
+            BorderColor="Gray" 
+            CornerRadius="10">
+            <HorizontalStackLayout 
+                Spacing="20">
+                <Label 
+                    Text="VELOCITY:" 
+                    TextColor="Silver" 
+                    FontAttributes="Bold" />
+                <Label 
+                    Text="17,500 MPH" 
+                    TextColor="White" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame 
+            BackgroundColor="#16213e" 
+            BorderColor="Gray" 
+            CornerRadius="10">
+            <HorizontalStackLayout 
+                Spacing="20">
+                <Label 
+                    Text="SECTOR:" 
+                    TextColor="Silver" 
+                    FontAttributes="Bold" />
+                <Label 
+                    Text="7 - GAMMA" 
+                    TextColor="White" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame 
+            BackgroundColor="#16213e" 
+            BorderColor="Gray" 
+            CornerRadius="10">
+            <HorizontalStackLayout 
+                Spacing="20">
+                <Label 
+                    Text="FUEL:" 
+                    TextColor="Silver" 
+                    FontAttributes="Bold" />
+                <Label 
+                    Text="88% REMAINING" 
+                    TextColor="Lime" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="ENGAGE THRUSTERS" 
+                Clicked="OnNextClicked" 
+                BackgroundColor="DarkSlateBlue" 
+                Margin="0,20,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

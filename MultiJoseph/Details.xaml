@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiJoseph.Details"
+             BackgroundColor="#1a1a2e">
+    <FlexLayout 
+        Direction="Column" 
+        JustifyContent="Center" 
+        AlignItems="Center" 
+        BackgroundColor="#1a1a2e">
+        <Label 
+            Text="MISSION BRIEF" 
+            TextColor="Gold" 
+            FontSize="20"/>
+        <Label 
+            Text="Repair the X-9 Satellite in Sector 7." 
+            TextColor="White" 
+            Margin="20"/>
+        <Button 
+            Text="PROCEED" 
+            Clicked="OnNextClicked"/>
+    </FlexLayout>
+</ContentPage>
